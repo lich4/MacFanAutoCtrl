@@ -71,7 +71,7 @@ Example: High-speed cooling when hot, and returning to quiet mode only when suff
 macfan cond add "cpu.temp >= 50 or gpu.temp >= 50" 100
 
 # 2. Return to 10% (quiet) ONLY when BOTH are back below 40°C
-macfan cond add "cpu.temp <= 40 and gpu.temp <= 40" 10
+macfan cond add "cpu.temp <= 40 and gpu.temp <= 40" 30
 ```
 
 ## Build from Source
