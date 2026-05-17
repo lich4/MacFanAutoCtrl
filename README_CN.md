@@ -71,7 +71,7 @@ sudo macfan service uninstall
 macfan cond add "cpu.temp >= 50 or gpu.temp >= 50" 100
 
 # 2. 降温恢复：只有当两者都降至 40°C 以下时，才返回 10% 静音转速
-macfan cond add "cpu.temp <= 40 and gpu.temp <= 40" 10
+macfan cond add "cpu.temp <= 40 and gpu.temp <= 40" 30
 ```
 
 ## 源码编译
